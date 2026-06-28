@@ -1,4 +1,4 @@
-<img width="1710" height="887" alt="image" src="https://github.com/user-attachments/assets/644a1804-b7e2-44d8-b2de-9fdfbfa48d62" /># 🌐 Charmy Basopiya — Portfolio Website
+# 🌐 Charmy Basopiya — Portfolio Website
  
 A personal portfolio website built with **React** and **Vite**, showcasing my skills, projects, and contact information as a frontend developer.
  
@@ -11,14 +11,9 @@ A personal portfolio website built with **React** and **Vite**, showcasing my sk
 ---
  
 ## 📸 Preview
- 
-> _Add a screenshot of your website here_  
-> Tip: Take a screenshot → upload to your repo → paste the path below
- 
-```
-<img width="1710" height="887" alt="image" src="https://github.com/user-attachments/assets/c59ed6ce-5e1d-4965-b812-d48cffd62921" />
 
-```
+> <img width="1710" height="887" alt="image" src="https://github.com/user-attachments/assets/c59ed6ce-5e1d-4965-b812-d48cffd62921" />
+
  
 ---
  
