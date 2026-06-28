@@ -1,4 +1,4 @@
-# 🌐 Charmy Basopiya — Portfolio Website
+<img width="1710" height="887" alt="image" src="https://github.com/user-attachments/assets/644a1804-b7e2-44d8-b2de-9fdfbfa48d62" /># 🌐 Charmy Basopiya — Portfolio Website
  
 A personal portfolio website built with **React** and **Vite**, showcasing my skills, projects, and contact information as a frontend developer.
  
@@ -6,8 +6,7 @@ A personal portfolio website built with **React** and **Vite**, showcasing my sk
  
 ## 🔗 Live Demo
  
-> _Add your Netlify / Vercel link here once deployed_  
-> `https://charmy-portfolio.netlify.app`
+> https://charmyportfolio.vercel.app/
  
 ---
  
@@ -17,7 +16,8 @@ A personal portfolio website built with **React** and **Vite**, showcasing my sk
 > Tip: Take a screenshot → upload to your repo → paste the path below
  
 ```
-![Portfolio Preview](./public/preview.png)
+<img width="1710" height="887" alt="image" src="https://github.com/user-attachments/assets/c59ed6ce-5e1d-4965-b812-d48cffd62921" />
+
 ```
  
 ---
