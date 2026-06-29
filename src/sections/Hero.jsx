@@ -37,6 +37,14 @@ const skills = [
   "Java",
 ];
 
+const dots = Array.from({ length: 30 }, (_, i) => ({
+  id: i,
+  left: Math.random() * 100,
+  top: Math.random() * 100,
+  duration: 15 + Math.random() * 20,
+  delay: Math.random() * 5,
+}));
+
 export const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
@@ -52,18 +60,16 @@ export const Hero = () => {
 
       {/* Green Dots */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {[...Array(30)].map((_, i) => (
+        {dots.map((dot) => (
           <div
-            key={i}
+            key={dot.id}
             className="absolute w-1.5 h-1.5 rounded-full opacity-60"
             style={{
               backgroundColor: "#20B2A6",
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animation: `slow-drift ${
-                15 + Math.random() * 20
-              }s ease-in-out infinite`,
-              animationDelay: `${Math.random() * 5}s`,
+              left: `${dot.left}%`,
+              top: `${dot.top}%`,
+              animation: `slow-drift ${dot.duration}s ease-in-out infinite`,
+              animationDelay: `${dot.delay}s`,
             }}
           />
         ))}
