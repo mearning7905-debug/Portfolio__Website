@@ -2,6 +2,16 @@ import { ExternalLink } from "lucide-react";
 
 const experiences = [
   {
+    period: "2026 — Present",
+    role: "AI & Frontend Developer",
+    company: "AI Resume Analyser",
+    companyUrl: "https://github.com/mearning7905-debug/AI-Resume-Analyser",
+    description:
+      "Designed and developed a browser-based AI resume analysis application that matches resumes to job descriptions and calculates real-time ATS compatibility scores with tailored feedback. Architected a serverless setup utilizing Puter.js for user authentication, cloud storage, and LLM inference, combined with a modular React, TypeScript, and Zustand state management workflow.",
+    technologies: ["React", "TypeScript", "Puter.js", "Tailwind CSS", "Zustand", "Vite"],
+    current: true,
+  },
+  {
     period: "Dec 2025 — Mar 2026",
     role: "Python Intern",
     company: "Codec Technologies",
@@ -28,7 +38,7 @@ export const Experience = () => {
             className="text-secondary-foreground text-sm
            font-medium tracking-wider uppercase animate-fade-in"
           >
-            Internship
+            Experience
           </span>
           <h2
             className="text-4xl md:text-5xl font-bold
@@ -47,7 +57,7 @@ export const Experience = () => {
            animate-fade-in animation-delay-200"
           >
             My professional journey — gaining real-world experience through
-            hands-on internship work and building production-ready applications.
+            hands-on development, internships, and building production-ready applications.
           </p>
         </div>
 
