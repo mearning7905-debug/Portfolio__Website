@@ -9,6 +9,15 @@ const GithubIcon = ({ className }) => (
 
 const projects = [
   {
+    title: "AI Resume Analyser",
+    description:
+      "A browser-based AI tool that uploads resumes, matches them to job descriptions using AI, and returns an ATS score with personalised feedback. Built with a serverless architecture using Puter.js for authentication, storage, and AI.",
+    image: "/projects/ai-resume-analyzer.png",
+    tags: ["React", "TypeScript", "Puter.js", "Tailwind CSS", "Zustand", "Vite"],
+    link: "https://github.com/mearning7905-debug/AI-Resume-Analyser",
+    github: "https://github.com/mearning7905-debug/AI-Resume-Analyser",
+  },
+  {
     title: "Secure E-Commerce Web Application",
     description:
       "A full-featured secure e-commerce web application built during my internship at Codec Technologies. Features include user authentication, product catalog, shopping cart, secure payment integration, order management, and an admin dashboard. Built with a focus on security best practices including data encryption, input validation, and secure session management.",
@@ -45,64 +54,69 @@ export const Projects = () => {
         </div>
 
         {/* Projects Grid */}
-        <div className="max-w-3xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {projects.map((project, idx) => (
             <div
               key={idx}
-              className="group glass rounded-2xl overflow-hidden animate-fade-in"
+              className="group glass rounded-2xl overflow-hidden animate-fade-in flex flex-col justify-between"
               style={{ animationDelay: `${(idx + 1) * 100}ms` }}
             >
-              {/* Image */}
-              <div className="relative overflow-hidden aspect-video">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-                <div
-                  className="absolute inset-0 
-                bg-gradient-to-t from-card via-card/50
-                 to-transparent opacity-60"
-                />
-                {/* Overlay Links */}
-                <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
-                  >
-                    <ArrowUpRight className="w-5 h-5" />
-                  </a>
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
-                  >
-                    <GithubIcon className="w-5 h-5" />
-                  </a>
+              <div>
+                {/* Image */}
+                <div className="relative overflow-hidden aspect-video">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                  <div
+                    className="absolute inset-0 
+                  bg-gradient-to-t from-card via-card/50
+                   to-transparent opacity-60"
+                  />
+                  {/* Overlay Links */}
+                  <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
+                    >
+                      <ArrowUpRight className="w-5 h-5" />
+                    </a>
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
+                    >
+                      <GithubIcon className="w-5 h-5" />
+                    </a>
+                  </div>
+                </div>
+
+                {/* Content */}
+                <div className="p-6 space-y-4">
+                  <div className="flex items-start justify-between">
+                    <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
+                      {project.title}
+                    </h3>
+                    <a href={project.github} target="_blank" rel="noopener noreferrer">
+                      <ArrowUpRight
+                        className="w-5 h-5 
+                      text-muted-foreground group-hover:text-primary
+                       group-hover:translate-x-1 
+                       group-hover:-translate-y-1 transition-all"
+                      />
+                    </a>
+                  </div>
+                  <p className="text-muted-foreground text-sm">
+                    {project.description}
+                  </p>
                 </div>
               </div>
 
-              {/* Content */}
-              <div className="p-6 space-y-4">
-                <div className="flex items-start justify-between">
-                  <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
-                    {project.title}
-                  </h3>
-                  <a href={project.github} target="_blank" rel="noopener noreferrer">
-                    <ArrowUpRight
-                      className="w-5 h-5 
-                    text-muted-foreground group-hover:text-primary
-                     group-hover:translate-x-1 
-                     group-hover:-translate-y-1 transition-all"
-                    />
-                  </a>
-                </div>
-                <p className="text-muted-foreground text-sm">
-                  {project.description}
-                </p>
+              <div className="px-6 pb-6">
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag, tagIdx) => (
                     <span
